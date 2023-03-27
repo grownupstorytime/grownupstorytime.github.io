@@ -25,6 +25,12 @@
 </head>
 
 <style>
+	@media(max-width: 500px) {
+		.reverse-columns {
+			flex-direction: column-reverse;
+			display: flex;
+		}
+	}
 	figcaption {
 		font-size: .5em !important;
 		text-align: center !important;
@@ -67,59 +73,59 @@
 	</nav>
 	
 	<!--main-->
-	<section class="hero is-fullheight-with-navbar">
-		<div class="hero-body columns is-vcentered is-desktop">
-			<div class="column">
-				<h1 class="title">a storytime for<br> <span id="typewriter"></span></h1>
-				<h2 class="subtitle"></h2>
-			</div>
-			<div class="column" data-aos="">
-				<figure class="image"><img src="bg.png"></figure>
+	<section class="hero is-fullheight-with-navbar has-text-centered-mobile">
+		<div class="hero-body">
+			<div class="columns is-vcentered reverse-columns">
+				<div class="column">
+					<h1 class="title">Storytime for<br> <span id="typewriter"></span></h1>
+					<h2 class="subtitle"></h2>
+				</div>
+				<div class="column" data-aos="">
+					<figure class="image"><img src="bg.png"></figure>
+				</div>
 			</div>
 		</div>
 	</section>
 	
 	<!--when-->
-	<section class="hero is-halfheight has-background-success-light">
-		<div class="hero-body columns is-vcentered is-desktop">
-			<div class="column"
-				data-aos="fade-right"
-				data-aos-duration="1000">
-				<h1 class="title has-text-success-dark">when</h1>
-				<h2 class="subtitle">Doors at 7p, show at 8p. Every 3rd Tuesday. 3714 Main Street. Cash-only day of show. Dining, paid garage, and free street parking nearby. <a href="https://instagram.com/grownupstorytime" target="_blank">Follow on Insta for the latest</a>.</h2>
-				<a href="https://continental-club-houston.square.site/" target="_blank" class="button is-success is-rounded"><i class="fa-solid fa-ticket"></i>
-					&nbsp;Get my tickets
-				</a>
-			</div>
-			<div class="column"
-				data-aos="fade-down"
-				data-aos-duration="2000">
+	<section class="hero is-halfheight has-background-success-light has-text-centered-mobile">
+		<div class="hero-body">
+			<div class="columns is-vcentered reverse-columns">
+				<div class="column is-10-mobile" data-aos="fade-right" data-aos-duration="1000">
+					<h1 class="title">when</h1>
+					<h2 class="subtitle">Doors at 7p, show at 8p. Every 3rd Tuesday. 3714 Main Street. Cash-only day of show. Dining, paid garage, and free street parking nearby. <a href="https://instagram.com/grownupstorytime" target="_blank">Follow on Insta for the latest</a>.</h2>
+					<a href="https://continental-club-houston.square.site/" target="_blank" class="button is-success is-rounded"><i class="fa-solid fa-ticket"></i>
+						&nbsp;Get my tickets
+					</a>
+				</div>
+				<div class="column is-10-mobile" data-aos="fade-left" data-aos-duration="2000">
 				<figure class="image">
 					<img src="p.JPG">
 					<figcaption class="has-text-centered">GUST reader Christina B. by Steve K.</figcaption>
 				</figure>
 			</div>
+			</div>
 		</div>
 	</section>
 	
 	<!--how-->
-	<section class="hero is-halfheight has-background-info-light">
-		<div class="hero-body columns is-vcentered is-desktop">
-			<div class="column" data-aos="fade-right" data-aos-duration="1000">
-				<h1 class="title has-text-info-dark">how</h1>
+	<section class="hero is-halfheight has-background-info-light has-text-centered-mobile">
+		<div class="hero-body">
+			<div class="columns is-vcentered  reverse-columns">
+				<div class="column" data-aos="fade-right" data-aos-duration="1000">
+				<h1 class="title">how</h1>
 				<h2 class="subtitle">You send us stories. We vet and assign them to a rotating crack-squad of expert storytellers. Stories and performers are crowdsourced, workshopped, and prepped beforehand by our team currently Blair and Emily.</h2>
 				<a href="https://form.jotform.com/230828014081044" target="_blank" class="button is-info is-rounded">
 					<i class="fa-solid fa-file-import"></i>
 					&nbsp;Send my story
 				</a>
 			</div>
-			<div class="column"
-				data-aos="fade-down"
-				data-aos-duration="2000">
+				<div class="column" data-aos="fade-left" data-aos-duration="2000">
 				<figure class="image">
 					<img src="p2.JPG">
 					<figcaption class="has-text-centered">GUST producers Emily and Blair by Steve K.</figcaption>
 				</figure>
+			</div>
 			</div>
 		</div>
 	</section>
@@ -129,7 +135,7 @@
 		<div class="hero-body columns is-vcentered is-desktop">
 			<div class="column">
 				<div class="has-text-centered" data-aos="fade-down" data-aos-duration="1000">
-					<h1 class="title has-text-warning-dark">over the years</h1>
+					<h1 class="title">over the years</h1>
 					<h2 class="subtitle">
 						<em>Grown-up Storytime (GUST)</em> works with countless talented writers, performers, hosts, producers, venues, and well-wishers. Together we captivate thousands.
 					</h2>
@@ -243,37 +249,39 @@
 	</section>
 	
 	<!--window-->
-	<section class="hero is-fullheight" style="background: url('p3.JPG') center no-repeat fixed rgba(0,0,0,1) !important; background-size: contain !important;">
+	<section class="hero is-halfheight" style="background: url('p3.JPG') center no-repeat rgba(0,0,0,1) !important; background-size: cover !important;">
 		<div class="hero-body columns is-vcentered is-desktop"></div>
+		<figcaption style="color: white !important;">packed GUST house at Continental Club by Steve K.</figcaption>
 	</section>
-	<figcaption>packed GUST house at Continental Club by Steve K.</figcaption>
 	
 	<!--friends-->
-	<section class="hero is-halfheight">
-		<div class="hero-body columns is-vcentered is-desktop">
-			<div class="column">
-				<div class="has-text-centered" data-aos="zoom-in" data-aos-duration="1000">
-					<h1 class="title">arts in houston</h1>
-					<h2 class="subtitle">
-						Also our friends:
-					</h2>
-					<a class="" href="https://themoth.org/events/results?eventLocations=6451&typesOfEvents=&eventDate=" target="_blank">
-						<em>The Moth</em>
-					</a> every 2nd Tuesday at Warehouse Live
-					<br>
-					<a class="" href="https://www.rudyardshtx.com/weekly-happenings" target="_blank">
-						<em>Rudyard's Comedy Open Mic</em>
-					</a> every Monday
-					<br>
-					<em>Monumental Mondays Montrose Bayou City Pinball League</em> 7:30p at Poison Girl
-					<br>
-					<a class="" href="https://www.instagram.com/_thingshappentohappen/" target="_blank">
-						<em>The Happening</em>
-					</a> performance art every last Friday at The Orange Show
-					<br>
-					<a class="" href="https://www.instagram.com/zinefesthouston" target="_blank">
-						<em>ZineFest Houston</em>
-					</a>
+	<section class="hero is-halfheight has-background-primary-light has-text-centered-mobile">
+		<div class="hero-body">
+			<div class="columns is-vcentered">
+				<div class="column" data-aos="fade-right" data-aos-duration="1000">
+				<h1 class="title">arts in houston</h1>
+				<h2 class="subtitle">Also our friends:</h2>
+			</div>
+				<div class="column">
+					<p data-aos="fade-left" data-aos-duration="1000">
+						<a class="" href="https://themoth.org/events/results?eventLocations=6451&typesOfEvents=&eventDate=" target="_blank">
+						<em>The Moth</em></a> every 2nd Tuesday at Warehouse Live<br>
+					</p>
+					<p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="250">
+						<a class="" href="https://www.rudyardshtx.com/weekly-happenings" target="_blank">
+							<em>Rudyard's Comedy Open Mic</em></a> every Monday<br>
+					</p>
+					<p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
+						<em>Monumental Mondays Montrose Bayou City Pinball League</em> 7:30p at Poison Girl<br>
+					</p>
+					<p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="750">
+						<a class="" href="https://www.instagram.com/_thingshappentohappen/" target="_blank">
+							<em>The Happening</em></a> performance art every last Friday at The Orange Show<br>
+					</p>
+					<p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000">
+						<a class="" href="https://www.instagram.com/zinefesthouston" target="_blank">
+						<em>ZineFest Houston</em></a>
+					</p>
 				</div>
 			</div>
 		</div>
@@ -322,7 +330,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.13.1/core.min.js"></script>
     <script>
       new Typewriter('#typewriter', {
-        strings: ['Houston.', 'grownups.', '...', 'GrOwNuPs :P', 'g®ø∑ñüp§ ?', 'you...', '...and me.', 'us.', 'U.S.', "y'all.", "all y'all :)", "augirheuqlnf4klacue8uhqti4lb3qnfdahucilewaeqa whoops sorry typo" ],
+        strings: ['Houston.', 'grownups.', '...', 'GrOwNuPs :P', 'g®ø∑ñüp§ ?', 'you...', '...and me.', 'us.', 'U.S.', "y'all.", "all y'all :)", "augirheuqlnf4klacue8uhqti4 oops sorry typo" ],
         autoStart: true,
         loop: true,
       });
