@@ -2,20 +2,13 @@
 <html lang="en" prefix="og: https://ogp.me/ns#">
 
 <head>
+	
 	<meta charset="UTF-8">
+	
 	<meta name="author" content="Grown-up Storytime">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Houston's monthly live storytelling event. Every 3rd Tuesday at Continental Club.">
 	<meta name="keywords" content="houston, nightlife, entertainment, date night, culture, fun, continental club, storytelling, adult storytime, grown-up storytime, writer, reader, event, houston nightlife, houston entertainment, houston date night, houston culture, houston fun, fun things to do in houston, houstonia magazine, houston press, houston chronicle, the moth, rudyard's, houston comedy, houston acting">
-	
-	<title>Grown-up Storytime | Houston's monthly live storytelling event</title>
-
-	<link rel="icon" type="image/x-icon" href="icon.ico"> <!--custom favicon-->	
-	
-	<link rel="stylesheet" href="hussar.css"> <!--hussar font-->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 	
 	<meta property="og:type" content="website" />
 	<meta property="og:image" content="og_banner.png" />
@@ -23,22 +16,39 @@
 	<meta property="og:url" content="https://grownupstorytime.com" />
 	<meta property="og:description" content="Houston's monthly live storytelling event" />
 	
+	<title>Grown-up Storytime | Houston's monthly live storytelling event</title>
+
+	<link rel="icon" type="image/x-icon" href="bot.svg">
+	
+	<link rel="stylesheet" href="hussar.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	
 </head>
 
 <style>
 	html {background-color: black !important;}
 	
+	.hero {
+		background: url('bg.jpg') center no-repeat !important;
+		background-size: cover !important;
+	}
 	.hero-head {background-color: rgba(0,0,0,.75) !important;}
 	.hero-body {background-color: rgba(0,0,0,.25) !important;}
-	.hero-foot {background-color: rgba(0,0,0,.5) !important;}
+	.hero-foot {background-color: rgba(0,0,0,.25) !important;}
+	.hero-foot>.container>.columns {margin-bottom: 0em !important;}
+	
 	/*
 	.hero-head {background-color: rgba(255,0,0,.5) !important;}
 	.container {outline: solid white !important;}
 	.columns {outline: solid yellow !important;}
 	.column.a {background-color: rgba(0,0,255,.5) !important;}
 	.column.b {background-color: rgba(0,255,0,.5) !important;}
-	
 	*/
+	
 	#cta {
 		background: repeating-linear-gradient(
 			-45deg, 
@@ -65,12 +75,10 @@
 	#cta2:hover {
 		background-color: rgba(255,220,89,.5) !important;
 	}
-	.hero {
-		background: url('bg.jpg') center no-repeat !important;
-		background-size: cover !important;
-	}
+
 	.navbar-item>a {transition: color .5s !important;}
 	.navbar-item>a:hover {color: white !important;}
+	
 	.title {
 		font-family: 'hussar' !important; 
 		color: rgba(255,255,255,1) !important;
@@ -80,53 +88,52 @@
 		color:rgba(255,255,255,1) !important;
 		margin-bottom: .75em !important;
 	}
-	.copyright { 
-		color:rgba(255,255,255,1) !important;
+	.copyright {
+		color:rgba(255,255,255,.75) !important;
 		font-size: 0.5em !important;
+		margin-bottom: .75em !important;
 	}
-	/*
-	.hero-foot {
-		background-color: rgba(0,0,0,0);
-		opacity: 1;
-		background: repeating-linear-gradient(45deg, rgba(73,95,198,.5), rgba(73,95,198,.25) 0.5px, rgba(0,0,0,0) 0.5px, rgba(0,0,0,0) 5px);
-	}
-	*/
+	.foot-icon {color: rgba(255,255,255,.5) !important; transition: color .5s !important;}
+	.foot-icon:hover {color: rgba(255,255,255,1) !important;}
 </style>
 
 <body>
 	
 	<section class="hero is-fullheight">
 		<div class="hero-head">
-			<nav class="navbar" role="navigation" aria-label="main navigation">
-				<div class="navbar-brand"></div>
+			<!--<nav class="navbar" role="navigation" aria-label="main navigation">
+				<div class="navbar-brand">
+					<a class="navbar-item" href="" target="_self">
+						<img src="bot.svg">
+					</a>
+					<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navBar">
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+					</a>
+				</div>
 				<div class="navbar-menu" id="navBar">
 					<div class="navbar-start">
 						<div class="navbar-item">
-							<a href="https://instagram.com/grownupstorytime" target="_blank">
-								<span class="icon">
-									<i class="fa-brands fa-instagram"></i>
-								</span>
+							<a class="icon" href="https://instagram.com/grownupstorytime" target="_blank">
+								<i class="fa-brands fa-instagram"></i>
 							</a>
 						</div>
 						<div class="navbar-item">
-							<a href="https://youtube.com/@GrownupStorytime/streams" target="_blank">
-								<span class="icon">
-									<i class="fa-brands fa-youtube"></i>
-								</span>
+							<a class="icon" href="https://youtube.com/@GrownupStorytime/streams" target="_blank">
+								<i class="fa-brands fa-youtube"></i>
 							</a>
 						</div>
 					</div>
 					<div class="navbar-end">
 						<div class="navbar-item">
-							<a href="" target="_blank">
-								<span class="icon">
-									<i class="fa-solid fa-circle-question"></i>
-								</span>
+							<a class="icon" href="" target="_blank">
+								<i class="fa-solid fa-circle-question"></i>
 							</a>
 						</div>
 					</div>
 				</div>
-			</nav>
+			</nav>-->
 		</div>
 		<div class="hero-body">
 			<div class="container">
@@ -142,7 +149,7 @@
 							<a href="https://form.jotform.com/230828014081044" target="_blank" class="button is-link is-rounded is-responsive" id="cta">
 								Submit story
 							</a>
-							<a href="https://continental-club-houston.square.site/" target="_blank" class="button is-link is-rounded is-responsive" id="cta2">
+							<a href="https://continental-club-houston.square.site" target="_blank" class="button is-link is-rounded is-responsive" id="cta2">
 								Get tickets
 							</a>
 						</div>
@@ -152,10 +159,29 @@
 		</div>
 		<div class="hero-foot has-text-centered">
 			<div class="container">
-				<p class="copyright">Copyright 2023 © Grown-up Storytime, est. 2007</p>
+				<div class="columns is-mobile has-text-centered is-centered is-multiline is-vcentered">
+					<div class="column is-narrow">
+						<a class="icon is-size-4 foot-icon" href="https://instagram.com/grownupstorytime" target="_blank">
+							<i class="fa-brands fa-instagram"></i>
+						</a>
+					</div>
+					<div class="column is-narrow">
+						<a class="icon is-size-4 foot-icon" href="" target="_self">
+							<i class="fa-solid fa-home"></i>
+						</a>
+					</div>
+					<div class="column is-narrow">
+						<a class="icon is-size-4 foot-icon" href="#" target="_self">
+							<i class="fa-solid fa-circle-question"></i>
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
+	
+	<script>
+	</script>
 </body>
 
 </html>
