@@ -8,422 +8,154 @@
 	<meta name="description" content="Houston's monthly live storytelling event. Every 3rd Tuesday at Continental Club.">
 	<meta name="keywords" content="houston, nightlife, entertainment, date night, culture, fun, continental club, storytelling, adult storytime, grown-up storytime, writer, reader, event, houston nightlife, houston entertainment, houston date night, houston culture, houston fun, fun things to do in houston, houstonia magazine, houston press, houston chronicle, the moth, rudyard's, houston comedy, houston acting">
 	
-	<title>Grown-up Storytime | You're invited! To Houston's monthly live storytelling event.</title>
+	<title>Grown-up Storytime | Houston's monthly live storytelling event</title>
 
 	<link rel="icon" type="image/x-icon" href="icon.ico"> <!--custom favicon-->	
 	
 	<link rel="stylesheet" href="hussar.css"> <!--hussar font-->
-	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> <!--Animate On Scroll library-->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"> <!--Bulma framework-->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"> <!--Merriweather font-->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> <!--FontAwesome icons-->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-extensions@6.2.7/dist/css/bulma-extensions.min.css"> <!--Bulma framework extensions-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 	
 	<meta property="og:type" content="website" />
-	<meta property="og:title" content="Grown-up Storytime" />
 	<meta property="og:image" content="og_banner.png" />
+	<meta property="og:title" content="Grown-up Storytime" />
 	<meta property="og:url" content="https://grownupstorytime.com" />
-	<meta property="og:description" content="You're invited! To Houston's monthly live storytelling event." />
+	<meta property="og:description" content="Houston's monthly live storytelling event" />
 	
 </head>
 
 <style>
-	@media(max-width: 500px) {
-		.reverse-columns {
-			flex-direction: column-reverse;
-			display: flex;
-		}
+	html {background-color: black !important;}
+	
+	.hero-head {background-color: rgba(0,0,0,.75) !important;}
+	.hero-body {background-color: rgba(0,0,0,.25) !important;}
+	.hero-foot {background-color: rgba(0,0,0,.5) !important;}
+	/*
+	.hero-head {background-color: rgba(255,0,0,.5) !important;}
+	.container {outline: solid white !important;}
+	.columns {outline: solid yellow !important;}
+	.column.a {background-color: rgba(0,0,255,.5) !important;}
+	.column.b {background-color: rgba(0,255,0,.5) !important;}
+	
+	*/
+	#cta {
+		background: repeating-linear-gradient(
+			-45deg, 
+			rgba(73,95,198,1), 
+			rgba(73,95,198,0) 0.5px, 
+			rgba(0,0,0,0) 0.5px, 
+			rgba(0,0,0,0) .15px
+			);
+		transition: background-color .5s !important;
 	}
-	figcaption {
-		font-size: .5em !important;
-		text-align: center !important;
+	#cta:hover {
+		background-color: rgba(73,95,198,.65) !important;
 	}
-	.button {
-		box-shadow: .1em .15em 0px rgba(0,0,0,.75) !important;
-		transition: box-shadow .5s !important;
+	#cta2 {
+		background: repeating-linear-gradient(
+			-45deg, 
+			rgba(255,220,89,.5), 
+			rgba(255,220,89,0) 0.5px, 
+			rgba(0,0,0,0) 0.5px, 
+			rgba(0,0,0,0) .15px
+			);
+		transition: background-color .5s !important;
 	}
-	.button:hover {
-		box-shadow: none !important;
+	#cta2:hover {
+		background-color: rgba(255,220,89,.5) !important;
 	}
-	/*.press {transition-property: transform !important;}
-	.press:hover {transform: scale(1.15, 1.15) !important; transition-delay: 0s !important; transition-timing-function: linear !important;}*/
-	.column {
-		padding: 1em 2em 0em 2em !important;
+	.hero {
+		background: url('bg.jpg') center no-repeat !important;
+		background-size: cover !important;
 	}
+	.navbar-item>a {transition: color .5s !important;}
+	.navbar-item>a:hover {color: white !important;}
 	.title {
-		font-family: 'Merriweather', serif !important;
-		/*font-size: 58px !important;*/
-		font-weight: 400 !important;
-		line-height: 1.5em !important;
+		font-family: 'hussar' !important; 
+		color: rgba(255,255,255,1) !important;
 	}
 	.subtitle {
-		font-family: 'Merriweather', serif !important;
-		/*font-size: 22px !important;*/
-		font-weight: 400 !important;
-		line-height: 1.25em !important;
+		font-family: 'Merriweather' !important; 
+		color:rgba(255,255,255,1) !important;
+		margin-bottom: .75em !important;
 	}
+	.copyright { 
+		color:rgba(255,255,255,1) !important;
+		font-size: 0.5em !important;
+	}
+	/*
+	.hero-foot {
+		background-color: rgba(0,0,0,0);
+		opacity: 1;
+		background: repeating-linear-gradient(45deg, rgba(73,95,198,.5), rgba(73,95,198,.25) 0.5px, rgba(0,0,0,0) 0.5px, rgba(0,0,0,0) 5px);
+	}
+	*/
 </style>
 
 <body>
 	
-	<nav class="navbar is-fixed-top" style="background-color: rgba(0,0,0,0);" role="navigation" aria-label="main navigation">
-		<div class="navbar-brand">
-			<!--<p class="navbar-item" data-aos="fade-down" data-aos-duration="500" data-aos-delay="1000" style="font-family: 'Merriweather';">Grown-up Storytime <a class="navbar-item icon is-large is-size-4" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2000" href="https://instagram.com/grownupstorytime/" target="_blank">
-				<i class="fa-brands fa-instagram"></i>
-			</a></p>-->
-			<a href="https://instagram.com/grownupstorytime" target="_blank">
-				<img src="logo.svg" width="200em" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1000">
-			</a>
-			
+	<section class="hero is-fullheight">
+		<div class="hero-head">
+			<nav class="navbar" role="navigation" aria-label="main navigation">
+				<div class="navbar-brand"></div>
+				<div class="navbar-menu" id="navBar">
+					<div class="navbar-start">
+						<div class="navbar-item">
+							<a href="https://instagram.com/grownupstorytime" target="_blank">
+								<span class="icon">
+									<i class="fa-brands fa-instagram"></i>
+								</span>
+							</a>
+						</div>
+						<div class="navbar-item">
+							<a href="https://youtube.com/@GrownupStorytime/streams" target="_blank">
+								<span class="icon">
+									<i class="fa-brands fa-youtube"></i>
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="navbar-end">
+						<div class="navbar-item">
+							<a href="" target="_blank">
+								<span class="icon">
+									<i class="fa-solid fa-circle-question"></i>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</nav>
 		</div>
-		<div class="navbar-menu">
-			<div class="navbar-end">
-			</div>
-		</div>
-	</nav>
-	
-	<!--main-->
-	<section class="hero is-fullheight-with-navbar has-text-centered-mobile">
 		<div class="hero-body">
-			<div class="columns is-vcentered reverse-columns">
-				<div class="column">
-					<h1 class="title is-size-1 is-size-5-mobile">Stories from<br> <span id="typewriter"></span></h1>
-					<h2 class="subtitle is-size-7-mobile"></h2>
-				</div>
-				<div class="column" data-aos="">
-					<figure class="image"><a href="https://instagram.com/grownupstorytime/" target="self"><img src="next_show.png"></a></figure>
-				</div>
-			</div>
-		</div>
-	</section>
-	
-	<!--when-->
-	<section class="hero is-halfheight has-text-centered-mobile" style="background-color: #fef9ee; opacity: 1; background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #fef9ee 40px ), repeating-linear-gradient( #fef2d255, #fef2d2 );">
-		<div class="hero-body">
-			<div class="columns is-vcentered reverse-columns">
-				<div class="column" data-aos="fade-right" data-aos-duration="1000">
-					<h1 class="title is-size-1 is-size-5-mobile ">when?</h1>
-					<h2 class="subtitle is-size-7-mobile ">Doors 7p. Show 8p. Every 3rd Tuesday. Continental Club at 3714 Main Street. Cash-only day of show. Dining, paid garage, and free street parking nearby.</h2>
-					<a href="https://continental-club-houston.square.site/" target="_blank" class="button is-warning is-rounded"><i class="fa-solid fa-ticket"></i>
-						&nbsp;Get my tickets
-					</a>
-				</div>
-				<div class="column" data-aos="fade-left" data-aos-duration="2000">
-				<figure class="image">
-					<img src="photo_when.JPG">
-					<figcaption class="has-text-centered">GUST reader Christina B. by Steve K.</figcaption>
-				</figure>
-			</div>
-			</div>
-		</div>
-	</section>
-	
-	<!--how-->
-	<section class="hero is-halfheight has-text-centered-mobile" style="background-color: #dbf3e8; opacity: 1; background: linear-gradient(135deg, #caeddd55 25%, transparent 25%) -40px 0/ 80px 80px, linear-gradient(225deg, #caeddd 25%, transparent 25%) -40px 0/ 80px 80px, linear-gradient(315deg, #caeddd55 25%, transparent 25%) 0px 0/ 80px 80px, linear-gradient(45deg, #caeddd 25%, #dbf3e8 25%) 0px 0/ 80px 80px;">
-		<div class="hero-body">
-			<div class="columns is-vcentered  reverse-columns">
-				<div class="column" data-aos="fade-right" data-aos-duration="1000">
-					<h1 class="title is-size-1 is-size-5-mobile ">how?</h1>
-					<h2 class="subtitle is-size-7-mobile ">You send us stories. We vet and assign them to a rotating crack-squad of expert storytellers. Stories and performers are crowdsourced, workshopped, and prepped beforehand by our team Blair and Emily.</h2>
-					<a href="https://form.jotform.com/230828014081044" target="_blank" class="button is-success is-rounded">
-						<i class="fa-solid fa-file-import"></i>
-						&nbsp;Tell my story
-					</a>
-				</div>
-				<div class="column" data-aos="fade-left" data-aos-duration="2000">
-					<figure class="image">
-						<img src="photo_how.JPG">
-						<figcaption class="has-text-centered">GUST producers Emily and Blair by Steve K.</figcaption>
-					</figure>
+			<div class="container">
+				<div class="columns is-vcentered is-mobile is-justify-content-flex-end">
+					<div class="column is-two-fifths has-text-left">
+						<h1 class="title is-size-1-desktop is-size-3-tablet is-size-4-mobile">
+							GROWN-UP<br>STORYTIME
+						</h1>
+						<h2 class="subtitle is-size-5-desktop is-size-6-tablet is-size-7-mobile">
+							3rd Tuesdays 8p Continental Club
+						</h2>
+						<div class="buttons">
+							<a href="https://form.jotform.com/230828014081044" target="_blank" class="button is-link is-rounded is-responsive" id="cta">
+								Submit story
+							</a>
+							<a href="https://continental-club-houston.square.site/" target="_blank" class="button is-link is-rounded is-responsive" id="cta2">
+								Get tickets
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</section>
-	
-	<!--press-->
-	<section class="hero" style="background-color: #8aabde; opacity: 1; background-image: radial-gradient(circle at center center, #b9cdeb, #8aabde), repeating-radial-gradient(circle at center center, #b9cdeb, #b9cdeb, 40px, transparent 80px, transparent 40px); background-blend-mode: multiply;">
-		<div class="hero-body columns is-vcentered is-multiline">
-			<div class="column is-full has-text-centered">
-				<div class="" data-aos="fade-down" data-aos-duration="1000">
-					<h1 class="title is-size-1 is-size-5-mobile has-text-white">press</h1>
-					<h2 class="subtitle is-size-7-mobile "></h2>
-				</div>
-			</div>
-			<div class="column has-text-centered">
-				<a	href="https://www.houstonpublicmedia.org/articles/arts-culture/2015/10/22/125067/whats-a-bootown" 
-					target="_blank">
-					<img	src="https://scontent-hou1-1.xx.fbcdn.net/v/t1.6435-9/87038184_2977936745633781_1123828465590599680_n.png?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=uPZsPnDtuNMAX-0k1XD&_nc_ht=scontent-hou1-1.xx&oh=00_AfDsYU5fh2LInFQOPLBqiaEIP-RjdEuBqOhnWs2KBsK19w&oe=64552490" 
-							class="press"
-							style="width: 10em;"
-							data-aos="fade-down" 
-							data-aos-duration="500" 
-							data-aos-delay="200"></a>
-				<p class="is-size-7 has-text-white">"<em>it takes a certain kind of trust to turn your creative work over to a stranger, and to just walk away and see what happens</em>"</p>
-			</div>
-			<div class="column has-text-centered">
-				<a	href="https://www.thrillist.com/lifestyle/houston/cool-things-to-do-in-houston-texas-that-even-locals-dont-know-exist" 
-					target="_blank">
-					<img	src="press_thrillist.svg"
-							class="press"
-							style="width: 15em;"
-							data-aos="fade-down" 
-							data-aos-duration="500"
-							data-aos-delay="600"></a>
-				<p class="is-size-7 has-text-white">"<em>a storytime just for grownups</em>"<br>"<em>great way to spend a Tuesday night</em>"</p>
-			</div>
-			<div class="column has-text-centered">
-				<a	href="https://www.chron.com/politics/article/Houston-city-council-emily-takes-notes-16107213.php" 
-					target="_blank">
-					<img	src="https://www.houstonchronicle.com/img/logos/white/logo.svg" 
-							class="press"
-							data-aos="fade-down" 
-							data-aos-duration="500" 
-							data-aos-delay="400"></a>
-				<p class="is-size-7 has-text-white">"<em>a monthly storytelling event</em>"</p>
-			</div>	
-			<div class="column has-text-centered">
-				<a	href="https://www.houstoniamag.com/travel-and-outdoors/houston-date-night-hotspots" 
-					target="_blank">
-					<img	src="press_houstonia.svg"
-							class="press" 
-							style="width: 15em;" 
-							data-aos="fade-down" 
-							data-aos-duration="500"
-							data-aos-delay="800"></a>
-				<p class="is-size-7 has-text-white">"<em>the Perfect Date in Houston</em>"<br>"<em>you'll either laugh, cry, or both</em>"</p>
+		<div class="hero-foot has-text-centered">
+			<div class="container">
+				<p class="copyright">Copyright 2023 © Grown-up Storytime, est. 2007</p>
 			</div>
 		</div>
 	</section>
-	
-	<!--timeline-->
-	<section class="hero is-fullheight" style="background-color: #ffe1e7; opacity: 1; background: repeating-linear-gradient( -45deg, #fed3db, #fed3db 20px, #ffe1e7 20px, #ffe1e7 100px );">
-		<div class="hero-body columns is-vcentered is-desktop">
-			<div class="column">
-				<div class="has-text-centered" data-aos="fade-down" data-aos-duration="1000">
-					<h1 class="title is-size-1 is-size-5-mobile ">over the years</h1>
-					<h2 class="subtitle is-size-7-mobile ">
-						<em>Grown-up Storytime (GUST)</em> works with countless talented writers, performers, hosts, producers, venues, and well-wishers. Together we captivate thousands.
-					</h2>
-				</div>
-				<div class="timeline is-centered">
-					<div class="timeline-item is-dark">
-						<div class="timeline-marker is-success is-icon" data-aos="fade-up" data-aos-duration="500" data-aos-anchor-placement="top-bottom"><i class="fa-solid fa-ticket"></i></div>
-						<div class="timeline-content" data-aos="fade-left" data-aos-duration="1000">
-							<p class="heading">Now</p>
-							<p>Every third Tuesday</p>
-						</div>
-					</div>
-					<header class="timeline-header">
-					    <span class="tag is-dark">2023</span>
-					</header>
-					<div class="timeline-item is-dark">
-						<div class="timeline-marker is-link is-icon" data-aos="fade-up" data-aos-duration="500" data-aos-anchor-placement="top-bottom"><i class="fa-solid fa-heart"></i></div>
-						<div class="timeline-content" data-aos="fade-right" data-aos-duration="1000">
-							<p class="heading">October 2022</p>
-							<p><a class="txtlnk" href="https://www.houstoniamag.com/travel-and-outdoors/houston-date-night-hotspots" target="_blank">Perfect date night</a></p>
-						</div>
-					</div>
-					<div class="timeline-item is-dark">
-						<div class="timeline-marker is-success is-icon" data-aos="fade-up" data-aos-duration="500" data-aos-anchor-placement="top-bottom"><i class="fa-solid fa-play"></i></div>
-						<div class="timeline-content" data-aos="fade-left" data-aos-duration="1000">
-							<p class="heading">August 2022</p>
-							<p>First <em>GUST</em> at Continental</p>
-						</div>
-					</div>
-					<div class="timeline-item is-dark">
-						<div class="timeline-marker is-warning is-icon" data-aos="fade-up" data-aos-duration="500" data-aos-anchor-placement="top-bottom"><i class="fa-solid fa-mask-face"></i></div>
-						<div class="timeline-content" data-aos="fade-right" data-aos-duration="1000">
-							<p class="heading">February 2022</p>
-							<p>Back in-person at Rudyard's</p>
-						</div>
-					</div>
-					<header class="timeline-header">
-					    <span class="tag is-dark">2022</span>
-					</header>
-					<div class="timeline-item is-dark">
-						<div class="timeline-marker is-dark is-icon" data-aos="fade-up" data-aos-duration="500" data-aos-anchor-placement="top-bottom"><i class="fa-solid fa-pause"></i></div>
-						<div class="timeline-content" data-aos="fade-left" data-aos-duration="1000">
-							<p class="heading">March 2021</p>
-							<p>Hiatus</p>
-						</div>
-					</div>
-					<header class="timeline-header">
-					    <span class="tag is-dark">2021</span>
-					</header>
-					<div class="timeline-item is-dark">
-						<div class="timeline-marker is-link is-icon" data-aos="fade-up" data-aos-duration="500" data-aos-anchor-placement="top-bottom"><i class="fa-solid fa-laptop"></i></div>
-						<div class="timeline-content" data-aos="fade-right" data-aos-duration="1000">
-							<p class="heading">April 2020</p>
-							<p><a class="" href="https://www.houstoniamag.com/arts-and-culture/2020/07/grown-up-storytime-live-storytelling-online" target="_blank">Virtual</a></p>
-						</div>
-					</div>
-					<div class="timeline-item is-dark">
-						<div class="timeline-marker is-danger is-icon" data-aos="fade-up" data-aos-duration="500" data-aos-anchor-placement="top-bottom"><i class="fa-solid fa-virus-covid"></i></div>
-						<div class="timeline-content" data-aos="fade-left" data-aos-duration="1000">
-							<p class="heading">March 2020</p>
-							<p>COVID-19 appears</p>
-						</div>
-					</div>
-					<header class="timeline-header">
-					    <span class="tag is-dark">2020</span>
-					</header>
-					<div class="timeline-item is-dark">
-						<div class="timeline-marker is-dark is-icon" data-aos="fade-up" data-aos-duration="500" data-aos-anchor-placement="top-bottom"><i class="fa-solid fa-masks-theater"></i></div>
-						<div class="timeline-content" data-aos="fade-right" data-aos-duration="1000">
-							<p class="heading">Fall/Winter 2017</p>
-							<p><em>BooTown</em> shutters</p>
-						</div>
-					</div>
-					<div class="timeline-item is-dark">
-						<div class="timeline-marker is-success is-icon" data-aos="fade-up" data-aos-duration="500" data-aos-anchor-placement="top-bottom"><i class="fa-solid fa-star"></i></div>
-						<div class="timeline-content" data-aos="fade-left" data-aos-duration="1000">
-							<p class="heading">March 2017</p>
-							<p>100th <em>GUST</em>!</p>
-						</div>
-					</div>
-					<header class="timeline-header">
-					    <span class="tag is-dark">2017</span>
-					</header>
-					<div class="timeline-item is-dark">
-						<div class="timeline-marker is-success is-icon" data-aos="fade-up" data-aos-duration="500" data-aos-anchor-placement="top-bottom"><i class="fa-solid fa-rocket"></i></div>
-						<div class="timeline-content" data-aos="fade-right" data-aos-duration="1000">	
-							<p class="heading">Ten busy years...</p>
-							<p><em>BooTown</em> keeps doing: <em>GUST</em>, <em>Benshi</em>, puppet shows, <em>Neo Benshi</em></p>
-						</div>
-					</div>
-					<div class="timeline-item is-dark">
-						<div class="timeline-marker is-link is-icon" data-aos="fade-up" data-aos-duration="500" data-aos-anchor-placement="top-bottom"><i class="fa-solid fa-face-smile"></i></div>
-						<div class="timeline-content" data-aos="fade-left" data-aos-duration="1000">
-							<p class="heading">December 2016</p>
-							<p><a href="https://freepresshouston.com/houstonian-tales-emily-hynds/" target="_blank">Delighting audiences</a></p>
-						</div>
-					</div>
-					<div class="timeline-item is-dark">
-						<div class="timeline-marker is-link is-icon" data-aos="fade-up" data-aos-duration="500" data-aos-anchor-placement="top-bottom"><i class="fa-solid fa-champagne-glasses"></i></div>
-						<div class="timeline-content" data-aos="fade-right" data-aos-duration="1000">
-							<p class="heading">October 2016</p>
-							<p><a href="https://www.thrillist.com/lifestyle/houston/cool-things-to-do-in-houston-texas-that-even-locals-dont-know-exist" target="_blank">A storytime just for grownups</a></p>
-						</div>
-					</div>
-					<div class="timeline-item is-dark">
-						<div class="timeline-marker is-link is-icon" data-aos="fade-up" data-aos-duration="500" data-aos-anchor-placement="top-bottom"><i class="fa-solid fa-microphone"></i></div>
-						<div class="timeline-content" data-aos="fade-left" data-aos-duration="1000">
-							<p class="heading">October 2015</p>
-							<p><a href="https://www.houstonpublicmedia.org/articles/arts-culture/2015/10/22/125067/whats-a-bootown/" target="_blank">Unique approach to storytelling</a></p>
-						</div>
-					</div>
-					<div class="timeline-item is-dark">
-						<div class="timeline-marker is-success is-icon" data-aos="fade-up" data-aos-duration="500" data-aos-anchor-placement="top-bottom"><i class="fa-solid fa-play"></i></div>
-						<div class="timeline-content" data-aos="fade-right" data-aos-duration="1000">
-							<p class="heading">Fall 2007</p>
-							<p>First <em>GUST</em> ever, at Rudyard's</p>
-						</div>
-					</div>
-					<div class="timeline-item is-dark">
-						<div class="timeline-marker is-success is-icon" data-aos="fade-up" data-aos-duration="500" data-aos-anchor-placement="top-bottom"><i class="fa-solid fa-masks-theater"></i></div>
-						<div class="timeline-content" data-aos="fade-left" data-aos-duration="1000">
-							<p class="heading">Summer 2007</p>
-							<p>U of H students create theater group <em>BooTown</em>
-						</div>
-					</div>
-					<header class="timeline-header">
-					    <span class="tag is-dark">2007</span>
-					</header>
-				</div>
-			</div>
-		</div>
-	</section>
-	
-	<!--banner-->
-	<section class="hero is-halfheight" style="background: url('photo_banner.JPG') center no-repeat rgba(48,115,221,1) !important; background-size: cover !important;">
-		<div class="hero-body columns is-vcentered is-desktop"></div>
-		<figcaption style="color: white !important;">packed GUST house at Continental Club by Steve K.</figcaption>
-	</section>
-	
-	<!--friends-->
-	<section class="hero is-halfheight has-text-centered-mobile" style="background-color: #fafafa; opacity: 1; background-image: linear-gradient(-45deg, #fafafa, #fafafa 50%, #f0fbf9 50%, #f0fbf9); background-size: 40px 40px;">
-		<div class="hero-body">
-			<div class="columns is-vcentered">
-				<div class="column" data-aos="fade-right" data-aos-duration="1000">
-					<h1 class="title is-size-1 is-size-5-mobile ">arts in houston</h1>
-					<h2 class="subtitle is-size-7-mobile ">A few of our friends:</h2>
-				</div>
-				<div class="column">
-					<p data-aos="fade-left" data-aos-duration="1000">
-						☐ <a class="" href="https://themoth.org/events/results?eventLocations=6451&typesOfEvents=&eventDate=" target="_blank">
-						<em>The Moth</em></a> 2nd Tuesdays at Warehouse Live<br>
-					</p>
-					<p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="250">
-						☐ <a class="" href="https://www.rudyardshtx.com/weekly-happenings" target="_blank">
-						<em>Rudyard's Comedy Open Mic</em></a> Mondays<br>
-					</p>
-					<p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
-						☐ <em>Monumental Mondays Montrose Bayou City Pinball League</em> 7:30p at Poison Girl<br>
-					</p>
-					<p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="750">
-						☐ <a class="" href="https://www.instagram.com/_thingshappentohappen/" target="_blank">
-						<em>The Happening</em></a> performance last Fridays at The Orange Show<br>
-					</p>
-					<p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000">
-						☐ <a class="" href="https://www.instagram.com/zinefesthouston" target="_blank">
-						<em>ZineFest Houston</em></a> through the year
-					</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	
-	<!--footer-->
-	<footer class="footer has-text-centered">
-		<img src="bot.svg" width="200em;">
-		<br><br>
-		<h1 class="title is-size-4" style="font-family: 'hussar' !important;">GROWN-UP<br>STORYTIME<h1>
-		<p style="font-size: .75em;"><em>Grown-up Storytime (GUST)</em> is Houston's monthly live storytelling event. You send us stories. We vet and assign them to a rotating crack-squad of expert storytellers. See you every 3rd Tuesday at Continental Club!</p>
-		<br>
-		<div style="font-size: 2em !important;">
-			<span class="icon is-large" data-aos="fade-down" data-aos-duration="250">
-				<a class="" href="https://continental-club-houston.square.site/" target="_blank">
-					<i class="fa-solid fa-ticket"></i>
-				</a>
-			</span>
-			<span class="icon is-large" data-aos="fade-down" data-aos-duration="250" data-aos-delay="300">
-				<a class="" href="https://www.google.com/maps/d/edit?mid=1-DuSCEeFT-73o_wRrhnREQ7Y0RcjtMo&usp=sharing" target="_blank">
-					<i class="fa-solid fa-location-dot"></i>
-				</a>
-			</span>
-			<span class="icon is-large" data-aos="fade-down" data-aos-duration="250" data-aos-delay="200">
-				<a class="" href="https://instagram.com/grownupstorytime" target="_blank">
-					<i class="fa-brands fa-instagram"></i>
-				</a>
-			</span>
-			<span class="icon is-large" data-aos="fade-down" data-aos-duration="250" data-aos-delay="100">
-				<a class="" href="https://form.jotform.com/230828014081044" target="_blank">
-					<i class="fa-solid fa-file-import"></i>
-				</a>
-			</span>
-			<span class="icon is-large" data-aos="fade-down" data-aos-duration="250" data-aos-delay="400">
-				<a class="" href="https://www.youtube.com/@GrownupStorytime/streams" target="_blank">
-					<i class="fa-brands fa-youtube"></i>
-				</a>
-			</span>
-		</div>
-		<br>
-		<p style="font-size: .5em;">Copyright 2023 © Grown-up Storytime, est. 2007</p>
-	</footer>
-	
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.13.1/core.min.js"></script>
-    <script>
-      new Typewriter('#typewriter', {
-        strings: ['Houston.', 'grownups.', 'GrOwNuPs :P', 'g®ø∑ñüp§ ???', '...... you.', '...... me.', 'us.', 'U.S.', "y'all.", "all y'all :)", "augirheuqlnf4klacue8uhqti4 oops" ],
-        autoStart: true,
-        loop: true,
-      });
-    </script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-	  
 </body>
 
 </html>
