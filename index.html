@@ -20,165 +20,68 @@
 
 	<link rel="icon" type="image/x-icon" href="bot.svg">
 	
+	<link rel="preload" href="bg.jpg" as="image">
+	
+	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="hussar.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-	
 </head>
 
 <style>
 	html {background-color: black !important;}
-	
-	.hero {
-		background: url('bg.jpg') center no-repeat !important;
-		background-size: cover !important;
-	}
-	.hero-head {background-color: rgba(0,0,0,.75) !important;}
-	.hero-body {background-color: rgba(0,0,0,.25) !important;}
-	.hero-foot {background-color: rgba(0,0,0,.65) !important; padding-top: 1em !important;}
-	.hero-foot>.container>.columns {margin-bottom: 0em !important;}
-	
-	/*
-	.hero-head {background-color: rgba(255,0,0,.5) !important;}
-	.container {outline: solid white !important;}
-	.columns {outline: solid yellow !important;}
-	.column.a {background-color: rgba(0,0,255,.5) !important;}
-	.column.b {background-color: rgba(0,255,0,.5) !important;}
-	*/
-	
-	#cta {
-		background: repeating-linear-gradient(
-			-45deg, 
-			rgba(73,95,198,1), 
-			rgba(73,95,198,0) 0.5px, 
-			rgba(0,0,0,0) 0.5px, 
-			rgba(0,0,0,0) .15px
-			);
+	.hero {background-image: url('bg.jpg') !important;}
+	.hero-body {background-color: rgba(0,0,0,0.35) !important;}
+	.button-style {
+		color: white !important;
+		background-color: rgba(0,0,0,.35) !important;
+		outline: .05em solid white !important;
 		transition: background-color .5s !important;
 	}
-	#cta:hover {
-		background-color: rgba(73,95,198,.65) !important;
+	.button-style:hover {
+		background-color: rgba(54,20,188,.85) !important;
 	}
-	#cta2 {
-		background: repeating-linear-gradient(
-			-45deg, 
-			rgba(255,220,89,.5), 
-			rgba(255,220,89,0) 0.5px, 
-			rgba(0,0,0,0) 0.5px, 
-			rgba(0,0,0,0) .15px
-			);
-		transition: background-color .5s !important;
-	}
-	#cta2:hover {
-		background-color: rgba(255,220,89,.5) !important;
-	}
-
-	.navbar-item>a {transition: color .5s !important;}
-	.navbar-item>a:hover {color: white !important;}
-	
-	.title {
-		font-family: 'hussar' !important; 
-		color: rgba(255,255,255,1) !important;
-	}
-	.subtitle {
-		font-family: 'Merriweather' !important; 
-		color:rgba(255,255,255,1) !important;
-		margin-bottom: .75em !important;
-	}
-	.copyright {
-		color:rgba(255,255,255,.75) !important;
-		font-size: 0.5em !important;
-		margin-bottom: .75em !important;
-	}
-	.foot-icon {color: rgba(255,255,255,.5) !important; transition: color .5s !important;}
-	.foot-icon:hover {color: rgba(255,255,255,1) !important;}
 </style>
 
 <body>
 	
-	<section class="hero is-fullheight">
-		<div class="hero-head">
-			<!--<nav class="navbar" role="navigation" aria-label="main navigation">
-				<div class="navbar-brand">
-					<a class="navbar-item" href="" target="_self">
-						<img src="bot.svg">
-					</a>
-					<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navBar">
-						<span aria-hidden="true"></span>
-						<span aria-hidden="true"></span>
-						<span aria-hidden="true"></span>
-					</a>
-				</div>
-				<div class="navbar-menu" id="navBar">
-					<div class="navbar-start">
-						<div class="navbar-item">
-							<a class="icon" href="https://instagram.com/grownupstorytime" target="_blank">
-								<i class="fa-brands fa-instagram"></i>
-							</a>
-						</div>
-						<div class="navbar-item">
-							<a class="icon" href="https://youtube.com/@GrownupStorytime/streams" target="_blank">
-								<i class="fa-brands fa-youtube"></i>
-							</a>
-						</div>
-					</div>
-					<div class="navbar-end">
-						<div class="navbar-item">
-							<a class="icon" href="" target="_blank">
-								<i class="fa-solid fa-circle-question"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-			</nav>-->
-		</div>
+	<section class="hero is-fullheight-with-navbar">
+		<div class="hero-head"></div>
 		<div class="hero-body">
 			<div class="container">
-				<div class="columns is-vcentered is-mobile is-justify-content-flex-end">
-					<div class="column is-two-fifths has-text-left">
-						<h1 class="title is-size-1-desktop is-size-3-tablet is-size-4-mobile">
-							GROWN-UP<br>STORYTIME
-						</h1>
-						<h2 class="subtitle is-size-5-desktop is-size-6-tablet is-size-7-mobile">
-							3rd Tuesdays 8p Continental Club
-						</h2>
-						<div class="buttons">
-							<a href="https://form.jotform.com/230828014081044" target="_blank" class="button is-link is-rounded is-responsive" id="cta">
-								Submit story
-							</a>
-							<a href="https://continental-club-houston.square.site" target="_blank" class="button is-link is-rounded is-responsive" id="cta2">
-								Get tickets
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="hero-foot has-text-centered">
-			<div class="container">
-				<div class="columns is-mobile has-text-centered is-centered is-multiline is-vcentered">
-					<div class="column is-narrow">
-						<a class="icon is-size-4 foot-icon" href="https://instagram.com/grownupstorytime" target="_blank">
-							<i class="fa-brands fa-instagram"></i>
-						</a>
-					</div>
-					<div class="column is-narrow">
-						<a class="icon is-size-4 foot-icon" href="https://grownupstorytimehouston.com" target="_self">
-							<i class="fa-solid fa-home"></i>
-						</a>
-					</div>
-					<div class="column is-narrow">
-						<a class="icon is-size-4 foot-icon" href="https://grownupstorytimehouston.com/about.html" target="_self">
-							<i class="fa-solid fa-circle-question"></i>
-						</a>
-					</div>
+				<h1 class="title">GROWN-UP<br>STORYTIME</h1>
+				<h2 class="subtitle">3rd Tuesdays 8p Continental</h2>
+				<div class="buttons">
+					<a class="button button-style is-rounded" href="" target="_blank">Submit story</a>
+					<a class="button button-style is-rounded" href="" target="_blank">Get tickets</a>
 				</div>
 			</div>
 		</div>
 	</section>
+	
+	<div class="hero-foot has-text-centered">
+		<div class="container">
+			<div class="columns is-mobile has-text-centered is-centered is-multiline is-vcentered">
+				<div class="column is-narrow">
+					<a class="icon is-size-4 foot-icon" href="https://instagram.com/grownupstorytime" target="_blank">
+						<i class="fa-brands fa-instagram"></i>
+					</a>
+				</div>
+				<div class="column is-narrow">
+					<a class="icon is-size-4 foot-icon" href="./index.html" target="_self">
+						<i class="fa-solid fa-home"></i>
+					</a>
+				</div>
+				<div class="column is-narrow">
+					<a class="icon is-size-4 foot-icon" href="./about.html" target="_self">
+						<i class="fa-solid fa-circle-question"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
 	
 	<script>
 	</script>
