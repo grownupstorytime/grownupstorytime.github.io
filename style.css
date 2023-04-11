@@ -36,7 +36,6 @@
 .button-style {
 	color: white !important;
 	background-color: rgba(0,0,0,.35) !important;
-	outline: .05em solid white !important;
 	transition: background-color .5s !important;
 }
 
