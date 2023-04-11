@@ -1,0 +1,43 @@
+.hero {
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+}
+
+.hero-foot {
+	background-color: rgba(0,0,0,.65) !important; 
+	padding-top: 1em !important;
+}
+
+.hero-foot>.container>.columns {
+	margin-bottom: 0em !important;
+}
+
+.title {
+	font-family: 'hussar' !important; 
+	color: rgba(255,255,255,1) !important;
+}
+
+.subtitle {
+	font-family: 'Merriweather' !important; 
+	color:rgba(255,255,255,.75) !important;
+	margin-bottom: .75em !important;
+}
+
+.foot-icon {
+	color: rgba(255,255,255,.5) !important; 
+	transition: color .5s !important;
+}
+
+.foot-icon:hover {
+	color: rgba(255,255,255,1) !important;
+}
+.button-style {
+	color: white !important;
+	background-color: rgba(0,0,0,.35) !important;
+	outline: .05em solid white !important;
+	transition: background-color .5s !important;
+}
+.button-style:hover {
+	background-color: rgba(54,20,188,.85) !important;
+}
