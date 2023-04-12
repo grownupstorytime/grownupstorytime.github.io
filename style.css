@@ -35,12 +35,13 @@
 
 .button-style {
 	color: white !important;
-	background-color: rgba(0,0,0,.35) !important;
+	border-width: 0 !important;
+	background-color: rgba(37,211,96,.75) !important;
 	transition: background-color .5s !important;
 }
 
 .button-style:hover {
-	background-color: rgba(54,20,188,.85) !important;
+	background-color: rgba(37,211,96,1) !important;
 }
 
 .link {
@@ -53,10 +54,11 @@
 }
 
 .press {
-	opacity: 50% !important;
+	opacity: 70% !important;
 	transition: opacity .5s !important;
 }
 
 .press:hover {
 	opacity: 100% !important;
 }
+hr {height: .01em !important; background-color: rgba(255,255,255,.75) !important;}
